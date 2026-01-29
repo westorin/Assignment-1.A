@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Study Dashboard</h1>
+      <p>My Study Dashboard</p>
+      <p>Kristjan Valur Gislason</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="tasks-title">
+        <header>
+          <h2 id="tasks-title">Today's tasks</h2>
+        </header>
+
+        <form action="#" method="post">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="task1" />
+                Review lecture notes
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="task2" />
+                Work on dashboard layout
+              </label>
+            </li>
+          </ul>
+
+          <label for="new-task">New task</label>
+          <input
+            id="new-task"
+            name="new-task"
+            type="text"
+            placeholder="Write a new task here..."
+          />
+          <button type="button">Add task</button>
+
+          <p>
+            The checkboxes, text field and “Add task” button show how the task
+            list will work in assignment 2. For now they are part of the static
+            HTML and CSS design only.
+          </p>
+        </form>
+      </section>
+
+      <section aria-labelledby="notes-title">
+        <header>
+          <h2 id="notes-title">Quick Notes</h2>
+        </header>
+
+        <form action="#" method="post">
+          <label for="notes-area">Notes</label>
+          <textarea
+            id="notes-area"
+            name="notes-area"
+            rows="8"
+            cols="40"
+            placeholder="Write your notes here..."
+          >
+Lab on Friday: bring laptop.
+Ask about responsive images.
+Try CSS variables for theme colors.</textarea
+          >
+
+          <button type="button">Save changes</button>
+
+          <p>
+            You can edit the text in the notes area. The “Save changes” button
+            is a placeholder for assignment 2 when JavaScript will save your
+            notes.
+          </p>
+        </form>
+      </section>
+
+      <section aria-labelledby="quote-title">
+        <header>
+          <h2 id="quote-title">Daily quote</h2>
+        </header>
+
+        <figure>
+          <blockquote>
+            <p>
+              “We are what we repeatedly do. Excellence, then, is not an act,
+              but a habit.”
+            </p>
+          </blockquote>
+          <figcaption>Will Durant</figcaption>
+        </figure>
+
+        <form action="#" method="post">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="general">General</option>
+            <option value="productivity">Productivity</option>
+            <option value="study">Study</option>
+            <option value="creativity">Creativity</option>
+          </select>
+
+          <button type="button">New quote</button>
+
+          <p>
+            The quote and category selector are static. JavaScript will later
+            rotate quotes and apply filters.
+          </p>
+        </form>
+      </section>
+
+      <section aria-labelledby="error-title">
+        <header>
+          <h2 id="error-title">
+            This website requires at least 600px screen width.
+          </h2>
+        </header>
+
+        <img src="oops.jpg" alt="Oops error illustration" />
+      </section>
+    </main>
+
+    <footer>
+      <img src="man_3728711.png" alt="Profile picture illustration" />
+    </footer>
+  </body>
+</html>

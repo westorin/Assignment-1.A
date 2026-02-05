@@ -4,19 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Study Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Study Dashboard</h1>
-      <p>My Study Dashboard</p>
-      <p>Kristjan Valur Gislason</p>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <h1 class="topbar__title">My Study Dashboard</h1>
+
+        <div class="topbar__profile">
+          <img
+            class="topbar__avatar"
+            src="man_3728711.png"
+            alt="Profile picture illustration"
+          />
+          <p class="topbar__name">
+            Kristján Valur Gíslason, Einar Berg, Halldór Már
+          </p>
+        </div>
+      </div>
+
+      <p class="sr-only">Study Dashboard</p>
     </header>
 
-    <main>
-      <section aria-labelledby="tasks-title">
+    <main id="dashboard" class="dashboard">
+      <section class="widget" aria-labelledby="tasks-title">
         <header>
-          <h2 id="tasks-title">Today's tasks</h2>
+          <h2 id="tasks-title">Today´s tasks</h2>
         </header>
 
         <form action="#" method="post">
@@ -52,7 +66,7 @@
         </form>
       </section>
 
-      <section aria-labelledby="notes-title">
+      <section class="widget" aria-labelledby="notes-title">
         <header>
           <h2 id="notes-title">Quick Notes</h2>
         </header>
@@ -81,7 +95,7 @@ Try CSS variables for theme colors.</textarea
         </form>
       </section>
 
-      <section aria-labelledby="quote-title">
+      <section class="widget" aria-labelledby="quote-title">
         <header>
           <h2 id="quote-title">Daily quote</h2>
         </header>
@@ -114,20 +128,19 @@ Try CSS variables for theme colors.</textarea
         </form>
       </section>
 
-      <section aria-labelledby="error-title">
+      <section id="error-view" class="error-view" aria-labelledby="error-title">
         <header>
           <h2 id="error-title">
-            This website requires at least 600px screen width and 1100px or
-            more.
+            This website requires at least 600px screen width.
           </h2>
         </header>
 
-        <img src="oops.jpg" alt="Oops error illustration" />
+        <img
+          class="error-view__image"
+          src="oops.jpg"
+          alt="Oops error illustration"
+        />
       </section>
     </main>
-
-    <footer>
-      <img src="man_3728711.png" alt="Profile picture illustration" />
-    </footer>
   </body>
 </html>

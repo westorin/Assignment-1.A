@@ -197,6 +197,10 @@ button:active {
   color: var(--text);
 }
 
+#category {
+  background-color: #020617;
+}
+
 /* Tasks row */
 #new-task {
   display: block;
